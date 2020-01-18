@@ -1,5 +1,5 @@
 # Build Stage
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1.803-bionic AS build-env
+FROM microsoft/aspnetcore-build:2 AS build-env
 WORKDIR /api
 
 COPY api.csproj .
